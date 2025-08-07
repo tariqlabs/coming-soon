@@ -18,35 +18,53 @@
 
     <style>
       body,
-      h1 {
-        font-family: "Raleway", sans-serif;
-      }
-      body,
       html {
         height: 100%;
+        margin: 0;
+        font-family: "Raleway", sans-serif;
       }
+
       .bgimg {
         background-image: url("images/landing.jpg");
         min-height: 100%;
         background-position: center;
         background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
       }
+
+      .logo-container {
+        padding: 16px;
+      }
+
       .logo-img {
         height: 50px;
       }
+
+      .content-center {
+        text-align: center;
+        padding: 0 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
       .arabic-heading {
         font-family: "Cairo", sans-serif;
         font-weight: 800;
-        background-color: rgba(0, 0, 0, 0.5); /* translucent background */
-        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
         border-radius: 10px;
-        display: inline-block;
-        color: #fff;
-        text-align: center;
+        padding: 20px;
+        max-width: 90%;
+        font-size: 2rem;
       }
+
       .join-button {
         margin-top: 30px;
       }
+
       .join-button a {
         background-color: #f9e663;
         color: black;
@@ -56,20 +74,52 @@
         font-weight: bold;
         border-radius: 8px;
         transition: background-color 0.3s ease;
+        display: inline-block;
       }
+
       .join-button a:hover {
         background-color: #f0f9ff;
       }
+
+      .footer {
+        padding: 16px;
+        font-size: 14px;
+        color: white;
+      }
+
+      @media (max-width: 600px) {
+        .arabic-heading {
+          font-size: 1.4rem;
+          padding: 15px;
+        }
+
+        .join-button a {
+          font-size: 16px;
+          padding: 10px 20px;
+        }
+
+        .logo-img {
+          height: 40px;
+        }
+
+        .footer {
+          font-size: 12px;
+          text-align: center;
+        }
+      }
     </style>
   </head>
+
   <body>
-    <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
-      <div class="w3-display-topleft w3-padding-large w3-xlarge">
+    <div class="bgimg">
+      <!-- Top: Logo -->
+      <div class="logo-container">
         <img src="images/logo.png" alt="Logo" class="logo-img" />
       </div>
 
-      <div class="w3-display-middle w3-center">
-        <h1 class="w3-jumbo w3-animate-top arabic-heading">
+      <!-- Center: Heading and Join Button -->
+      <div class="content-center">
+        <h1 class="arabic-heading">
           مجتمع للمبرمجين العرب لتبادل المعرفة وبناء المستقبل
         </h1>
         <div class="join-button">
@@ -79,9 +129,15 @@
         </div>
       </div>
 
-      <div class="w3-display-bottomleft w3-padding-large">
+      <!-- Bottom: Footer -->
+      <div class="footer">
         Powered by
-        <a href="https://www.tariqlabs.com" target="_blank">TariqLabs</a>
+        <a
+          href="https://www.tariqlabs.com"
+          target="_blank"
+          style="color: #f9e663"
+          >TariqLabs</a
+        >
       </div>
     </div>
   </body>
