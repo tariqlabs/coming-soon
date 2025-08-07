@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <title>SalamLab</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- W3.CSS and fonts -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Raleway"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body,
+      h1 {
+        font-family: "Raleway", sans-serif;
+      }
+      body,
+      html {
+        height: 100%;
+      }
+      .bgimg {
+        background-image: url("images/landing.jpg");
+        min-height: 100%;
+        background-position: center;
+        background-size: cover;
+      }
+      .logo-img {
+        height: 50px;
+      }
+      .arabic-heading {
+        font-family: "Cairo", sans-serif;
+        font-weight: 800;
+        background-color: rgba(0, 0, 0, 0.5); /* translucent background */
+        padding: 20px;
+        border-radius: 10px;
+        display: inline-block;
+        color: #fff;
+        text-align: center;
+      }
+      .join-button {
+        margin-top: 30px;
+      }
+      .join-button a {
+        background-color: #f9e663;
+        color: black;
+        padding: 12px 24px;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: bold;
+        border-radius: 8px;
+        transition: background-color 0.3s ease;
+      }
+      .join-button a:hover {
+        background-color: #f0f9ff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+      <div class="w3-display-topleft w3-padding-large w3-xlarge">
+        <img src="images/logo.png" alt="Logo" class="logo-img" />
+      </div>
+
+      <div class="w3-display-middle w3-center">
+        <h1 class="w3-jumbo w3-animate-top arabic-heading">
+          مجتمع للمبرمجين العرب لتبادل المعرفة وبناء المستقبل
+        </h1>
+        <div class="join-button">
+          <a href="https://forms.gle/CUj2mc5QCgsGF6cg9" target="_blank"
+            >طلب الانضمام</a
+          >
+        </div>
+      </div>
+
+      <div class="w3-display-bottomleft w3-padding-large">
+        Powered by
+        <a href="https://www.tariqlabs.com" target="_blank">TariqLabs</a>
+      </div>
+    </div>
+  </body>
+</html>
